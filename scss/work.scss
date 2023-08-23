@@ -163,62 +163,166 @@ $transitionSpeed :1.1s;
 
 
 // FUN WORK
-.camera{
-    // width: auto;
-    height: 423px;
-    overflow: hidden; 
-    position:relative;
-    margin: 0 auto;
+.funItem1{
+  width: auto;
+  height: 423px;
+  overflow: hidden; 
+  position:relative;
+  margin: 0 auto;
 
-    &Image{
-        // width: auto;
+  &Image{
+      width: auto;
+      height: 423px;
+      margin:0 auto; 
+      overflow: hidden;
+      transition:$transitionSpeed;
+
+      img{
+        width: auto;
         height: 423px;
-        margin:0 auto; 
-        overflow: hidden;
-        transition:$transitionSpeed;
-        // object-fit: cover;
-    }
+      }
+  }
 
-    &Image:hover{
-        @include img_hover;
-    }
+  &Image:hover{
+      @include img_hover;
+  }
 
-    &Text {
-        font-size:130%;
-        text-align:center;
-        padding-top:80px;
-        color:#1a1111;
-    }
+  &Text {
+      font-size:130%;
+      text-align:center;
+      padding-top:80px;
+      color:#1a1111;
+  }
 }
 
 
-.chicago{
+.funItem2{
+  width:auto;
+  height: 423px;
+  overflow: hidden; 
+  position:relative;
+  
+
+  &Image{
+      width:auto;
+      height: 423px;
+      margin:0 auto; 
+      overflow: hidden;
+      transition:$transitionSpeed;
+
+      img{
+        width: auto;
+        height: 423px;
+      }
+  }
+
+  &Image:hover{
+      @include img_hover;
+  }
+
+  &Text {
+      font-size:130%;
+      text-align:center;
+      padding-top:80px;
+      color:#1a1111;
+  }
+}
+
+.funItem3{
+  width:auto;
+  height: 423px;
+  overflow: hidden; 
+  position:relative;
+
+  &Image{
     width:auto;
     height: 423px;
-    overflow: hidden; 
-    position:relative;
-    object-fit: cover;
+    margin:0 auto; 
+    overflow: hidden;
+    transition:$transitionSpeed;
 
-    &Image{
-        width:auto;
-        height: 423px;
-        margin:0 auto; 
-        overflow: hidden;
-        transition:$transitionSpeed;
-        object-fit: cover;
+    img{
+      width: auto;
+      height: 423px;
     }
+  } 
 
-    &Image:hover{
-        @include img_hover;
-    }
+  &Image:hover{
+    @include img_hover;
+  }
 
-    &Text {
-        font-size:130%;
-        text-align:center;
-        padding-top:80px;
-        color:#1a1111;
-    }
+  &Text {
+    font-size:130%;
+    text-align:center;
+    padding-top:80px;
+    color:#1a1111;
+  }
 }
+
+.funItem4{
+  width:auto;
+  height: 423px;
+  overflow: hidden; 
+  position:relative;
+
+  &Image{
+    width:auto;
+    height: 423px;
+    margin:0 auto; 
+    overflow: hidden;
+    transition:$transitionSpeed;
+
+    img{
+      width: auto;
+      height: 423px;
+    }
+  }
+
+  &Image:hover{
+      @include img_hover;
+  }
+
+  &Text {
+    font-size:130%;
+    text-align:center;
+    padding-top:80px;
+    color:#1a1111;
+  }
+}
+
+.funItem5{
+  width:auto;
+  height: 423px;
+  overflow: hidden; 
+  position:relative;
+
+  &Image{
+      width:auto;
+      height: 423px;
+      margin:0 auto; 
+      overflow: hidden;
+      transition:$transitionSpeed;
+
+      img{
+        width: auto;
+        height: 423px;
+      }
+  }
+
+  &Image:hover{
+      @include img_hover;
+}
+
+  &Text {
+      font-size:130%;
+      text-align:center;
+      padding-top:80px;
+      color:#1a1111;
+  }
+}
+
+
+//switch
 #ui, #fun {
   display: none;
 }
