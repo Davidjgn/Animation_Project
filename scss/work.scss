@@ -136,3 +136,84 @@ img{
   transform: scale(0.92);
 }
 
+
+
+
+$transitionSpeed :1.1s;
+
+@mixin img_hover{
+    filter: brightness(0.5);
+    transform:scale(1.08);
+    transition:$transitionSpeed;
+}
+
+// @mixin img_position{
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .column1{
+//     @include img_position;
+    
+// }
+
+
+
+// FUN WORK
+.camera{
+    // width: auto;
+    height: 423px;
+    overflow: hidden; 
+    position:relative;
+    margin: 0 auto;
+
+    &Image{
+        // width: auto;
+        height: 423px;
+        margin:0 auto; 
+        overflow: hidden;
+        transition:$transitionSpeed;
+        // object-fit: cover;
+    }
+
+    &Image:hover{
+        @include img_hover;
+    }
+
+    &Text {
+        font-size:130%;
+        text-align:center;
+        padding-top:80px;
+        color:#1a1111;
+    }
+}
+
+
+.chicago{
+    width:auto;
+    height: 423px;
+    overflow: hidden; 
+    position:relative;
+    object-fit: cover;
+
+    &Image{
+        width:auto;
+        height: 423px;
+        margin:0 auto; 
+        overflow: hidden;
+        transition:$transitionSpeed;
+        object-fit: cover;
+    }
+
+    &Image:hover{
+        @include img_hover;
+    }
+
+    &Text {
+        font-size:130%;
+        text-align:center;
+        padding-top:80px;
+        color:#1a1111;
+    }
+}
+
