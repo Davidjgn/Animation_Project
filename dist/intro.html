@@ -53,7 +53,7 @@
         </div>
         <iframe
             class="work"
-            src="#";
+            src="../dist/work.html";
             width="100%"
             height="800"
           ></iframe>
@@ -99,6 +99,7 @@
         work.style.display = "block";
         work.focus();
         work.scrollIntoView({ behavior: "smooth" });
+        transitionButton.remove();
       });
 
       window.onload = function () {
