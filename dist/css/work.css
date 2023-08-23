@@ -11,6 +11,7 @@
 }
 .work h2 {
   font-size: 50px;
+  font-weight: bold;
 }
 .work .button-box {
   width: 330px;
@@ -106,14 +107,18 @@
   transition: opacity 0.6s ease;
   width: 100%;
 }
+.hover-mask .hover-text {
+  text-align: center;
+}
 .hover-mask .hover-text h2 {
+  font-weight: bold;
   color: white;
   font-size: 32px;
   margin-bottom: 16px;
 }
 .hover-mask .hover-text p {
   color: #f0ff00;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .item:hover .hover-mask {
@@ -173,4 +178,12 @@
   text-align: center;
   padding-top: 80px;
   color: #1a1111;
+}
+
+#ui, #fun {
+  display: none;
+}
+
+#ui.active, #fun.active {
+  display: block;
 }/*# sourceMappingURL=work.css.map */
