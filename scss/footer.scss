@@ -1,0 +1,45 @@
+// header
+
+.footer {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 70px;
+  height: 66px;
+
+  &-logo {
+    a {
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  &-link {
+    display: flex;
+    justify-content: flex-start;
+
+    &-item {
+      a {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 100%;
+        color: #000;
+        text-align: center;
+        line-height: 66px;
+        font-weight: bold;
+        font-size: 15px;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

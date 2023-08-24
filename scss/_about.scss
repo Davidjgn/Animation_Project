@@ -1,3 +1,6 @@
+$background-color: #f3f3f3;
+$bubble-border-color: #f3ff53;
+
 .content{
     max-width: 100%;
     margin: 0 auto;
@@ -62,4 +65,103 @@
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
-
+.wrapper {
+  text-align: center;
+  background-color: $background-color;
+  .resource-wrap {
+    .img-lamp {
+      width: 60px;
+      height: 48px;
+      margin: 98px auto 11px auto;
+    }
+    .about-title {
+      margin: 0px auto 50px auto;
+      h2 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+    .about-desc {
+      margin-bottom: 26px;
+      .desc-text {
+        font-size: 16px;
+        line-height: 1.4em;
+        span {
+          background-color: $bubble-border-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .hover-wrap {
+    padding-bottom: 200px;
+    position: relative;
+    .hover-img {
+      width: 797px;
+      height: 460px;
+    }
+    .hover-items {
+      position: relative;
+      width: 800px;
+      height: 462px;
+      margin: auto;
+      .hover-item {
+        position: absolute;
+      }
+      .item1 {
+        top: 70px;
+        left: 30px;
+        width: 350px;
+        height: 360px;
+        border-radius: 70px;
+      }
+      .item2 {
+        top: 70px;
+        right: 64px;
+        width: 345px;
+        height: 173px;
+        border-radius: 40px;
+      }
+      .item3 {
+        bottom: 28px;
+        right: 60px;
+        width: 168px;
+        height: 172px;
+        border-radius: 35px;
+      }
+      .item4 {
+        bottom: 28px;
+        right: 240px;
+        width: 168px;
+        height: 172px;
+        border-radius: 35px;
+      }
+    }
+  }
+  .bubble {
+    width: 243px;
+    height: 167px;
+    border: 3px solid $bubble-border-color;
+    border-radius: 25px;
+    line-height: normal;
+    position: absolute;
+    background-color: rgb(255 255 255 / 80%);
+    display: none;
+    .bubble-text {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      .bubble-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .bubble-desc {
+        font-weight: bold;
+        font-size: 13px;
+      }
+    }
+  }
+}

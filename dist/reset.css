@@ -53,3 +53,6 @@ table {
   color: transparent;
   position: absolute;
 }
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+}

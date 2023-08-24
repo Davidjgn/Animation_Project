@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div>
+      <div class="main-text">
+        <div class="video-wrapper">
+          <video playsinline autoplay muted loop poster="#">
+            <source
+              src="https://video.wixstatic.com/video/c0bbc5_ea3fdc8d953b4dbcab20a021d2ef1389/720p/mp4/file.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div>
+            <p class="intro-wrapper">
+              <span
+                class="intro"
+                lang="en"
+                aria-label="Hello"
+                onmousedown="mouseUp(this)"
+              ></span>
+              <span class="intro-name">I'm Lee.</span>
+              <p id="intro-description">
+                Once upon a time in Seoul, a curious soul was born with an
+                affinity for code. <br />As the years danced by, destiny led me to
+                the bustling city of Chicago to delve into the art of web
+                development.
+                <br />
+                My journey is woven with a love for crafting interactive
+                experiences, and an appreciation for clean aesthetics.
+              </p>
+            </p>
+            <p id="intro-transition">Ready for a sneak peek of my work?</p>
+            <div class="btn-transition" aria-hidden="true"></div>
+          </div>
+        </div>
+        <iframe
+            class="work"
+            src="../dist/work.html";
+            width="100%"
+            height="800"
+          ></iframe>
+      </div>
+    </div>
+
+    <script>
+      const greeting = document.getElementsByClassName("intro")[0];
+      const transitionButton =
+        document.getElementsByClassName("btn-transition")[0];
+      const work = document.getElementsByClassName("work")[0];
+
+      let count = 0;
+      let timer = 0;
+
+      function mouseUp(obj) {
+        clearInterval(timer);
+      }
+
+      function showGreetings() {
+        const greetings = [
+          "Hi there",
+          "안녕",
+          "Hola",
+          "こんにちは",
+          "Bonjour",
+          "你好",
+          "Hallo",
+          "हाय",
+          "Здравствуйте",
+        ];
+
+        let text = `${greetings[count++]}, `;
+
+        if (count === greetings.length) {
+          count = 0;
+        }
+
+        greeting.innerHTML = text;
+      }
+
+      transitionButton.addEventListener("click", () => {
+        work.style.display = "block";
+        work.focus();
+        work.scrollIntoView({ behavior: "smooth" });
+        transitionButton.remove();
+      });
+
+      window.onload = function () {
+        showGreetings();
+        timer = setInterval(showGreetings, 500);
+      };
+    </script>
+  </body>
+</html>
