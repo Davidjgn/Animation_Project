@@ -4,6 +4,8 @@ $bubble-border-color: #f3ff53;
 .content{
     max-width: 100%;
     margin: 0 auto;
+    background-color: $background-color;
+    height: 600px;
     
     .image-container{
         z-index: 0;
