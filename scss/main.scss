@@ -33,6 +33,7 @@ video {
 .intro-wrapper {
   display: flex;
   margin-top: 250px;
+  margin-bottom: 1rem;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
@@ -53,6 +54,8 @@ video {
 
 #intro-description {
   margin-left: 25%;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 #intro-transition {
