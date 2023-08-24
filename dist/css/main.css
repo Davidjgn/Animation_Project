@@ -1,5 +1,4 @@
 .wrapper {
-  margin-top: 59px;
   text-align: center;
   background-color: #f3f3f3;
 }
@@ -96,7 +95,7 @@
 .wrapper .bubble .bubble-text .bubble-desc {
   font-weight: bold;
   font-size: 13px;
-} /*# sourceMappingURL=main.css.map */
+}
 
 #container {
   position: relative;
@@ -119,7 +118,8 @@ video {
   z-index: -1;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .intro-wrapper {
@@ -167,11 +167,10 @@ video {
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-5px);
   }
-}
+}/*# sourceMappingURL=main.css.map */
