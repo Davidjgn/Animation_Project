@@ -15,8 +15,79 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- animation button -->
+    <!-- button -->
+    <section>
+      <div id="updownbtn" onclick="moveto()">
+        <g filter="url(#comp-jzk70i1e-shadow_comp-jzk70i1e)">
+          <!--?xml version="1.0" encoding="UTF-8"?-->
+          <svg
+            id="svg1"
+            preserveAspectRatio="xMidYMid meet"
+            data-bbox="0 0 60 60"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60"
+            height="50px"
+            width="50px"
+            data-type="ugc"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <g fill-rule="evenodd">
+              <path
+                class="path1"
+                fill="#F0FF00"
+                d="M60 30c0 16.569-13.431 30-30 30C13.431 60 0 46.569 0 30 0 13.431 13.431 0 30 0c16.569 0 30 13.431 30 30z"
+              ></path>
+              <g
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke="#000000"
+              >
+                <path
+                  fill="none"
+                  d="M36.924 35.305l-7.071 7.071-7.071-7.07"
+                ></path>
+                <path d="M29.853 42.376l.141-23.9" fill="none"></path>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+
+        function moveto() {
+          let scVal = window.scrollY;
+          if (scVal === 0) {
+            // 맨 위에 오면
+            document.getElementById("updownbtn").style.transform =
+              "rotate(180deg)";
+            window.scrollTo({
+              top: document.body.scrollHeight, // <- 페이지 총 Height
+              behavior: "smooth",
+            });
+            scVal = 0;
+            console.log(scVal);
+            document.getElementsByTagName("path")[0].style.fill = "white";
+          } else {
+            // 맨 밑에 오면
+            document.getElementById("updownbtn").style.transform =
+              "rotate(180deg)";
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            scVal = document.body.scrollHeight;
+            console.log(scVal);
+            document.getElementsByTagName("path")[0].style.fill =
+              "rgb(240, 255, 0)";
+          }
+        }
+      </script>
+    </section>
+  </body>
 </html>

@@ -1,4 +1,20 @@
 @import "./about";
+@import "./variables";
+@import "./footer";
+@import "./header";
+@import "./work";
+
+#updownbtn {
+  z-index: 200;
+  position: fixed;
+  left: 1300px;
+  bottom: 100px;
+  box-shadow: #1a1111;
+}
+
+#svg1 {
+  filter: drop-shadow(0 0 10px #e1e1e1);
+}
 
 .video-wrapper {
   height: 65vh;
