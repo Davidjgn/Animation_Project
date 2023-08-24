@@ -36,6 +36,11 @@
     }
   }
 }
+.first,.second{
+  font-size: 14px;
+  font-weight: bold;
+}
+
 
 #btn {
 	left: 50px;
@@ -344,6 +349,9 @@ $transitionSpeed :1.1s;
 }
 #ui.active, #fun.active {
   display: block;
+}
+#btnA.active, #btnB.active{
+  color:#f0ff00
 }
 
 

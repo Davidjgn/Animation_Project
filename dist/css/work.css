@@ -32,6 +32,11 @@
   text-align: center;
 }
 
+.first, .second {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 #btn {
   left: 50px;
   top: 0;
@@ -300,4 +305,8 @@
 
 #ui.active, #fun.active {
   display: block;
+}
+
+#btnA.active, #btnB.active {
+  color: #f0ff00;
 }/*# sourceMappingURL=work.css.map */
