@@ -17,8 +17,20 @@
     ></script>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header -->
+    <header class="header">
+      <h1 class="header-logo"><a href="index.html">JUNG</a></h1>
+      <ul class="header-nav">
+        <li class="header-nav-item active"><a href="index.html">Work</a></li>
+        <li class="header-nav-item"><a href="about.html">About</a></li>
+        <li class="header-nav-item"><a href="https://www.junghoe.com/_files/ugd/c0bbc5_c06bbb378ee74ffdb80a814cd039100c.pdf">CV</a></li>
+      </ul>
+    </header>
+
     <!-- intro  -->
     <div class="main-text">
       <div class="video-wrapper">
@@ -57,141 +69,133 @@
     <!-- work  -->
     <section class="container">
       <div class="work">
-        <h2>Works</h2>
+          <h2>Works</h2>
         <div class="form-box">
-          <div class="button-box">
-            <div id="btn"></div>
-            <button
-              type="button"
-              id="btnA"
-              class="toggle-btn"
-              onclick="leftClick()"
-            >
-              <p class="first">UI/UX</p>
-            </button>
-            <button
-              type="button"
-              id="btnB"
-              class="toggle-btn"
-              onclick="rightClick()"
-            >
-              <p class="second">FUN WORKS</p>
-            </button>
+              <div class="button-box">
+                  <div id="btn"></div>
+                  <button type="button" id="btnA" class="toggle-btn" onclick="leftClick()"><p class="first">UI/UX</p></button>
+                  <button type="button" id="btnB" class="toggle-btn" onclick="rightClick()"><p class="second">FUN WORKS</p></button>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
 
-    <section class="gallary" id="ui">
+
+  <section class="gallary" id="ui">
       <div class="items">
-        <div class="item1 item">
-          <img
-            src="https://static.wixstatic.com/media/c0bbc5_38b7b214f156472796e61ddd6fa87931~mv2_d_4318_2951_s_4_2.png/v1/fit/w_921,h_630,q_90/c0bbc5_38b7b214f156472796e61ddd6fa87931~mv2_d_4318_2951_s_4_2.png"
-            alt=""
-          />
-          <div class="hover-mask">
-            <div class="hover-text">
-              <h2>Koriny Real Estate</h2>
-              <p>#UX Resarch #UI design #Visual design</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="item2 item">
-            <img
-              src="https://static.wixstatic.com/media/c0bbc5_5757a3151a4c4b7daf7167b874a4c362~mv2.png/v1/fit/w_259,h_403,q_90/c0bbc5_5757a3151a4c4b7daf7167b874a4c362~mv2.png"
-              alt=""
-            />
-            <div class="hover-mask">
-              <div class="hover-text">
-                <h2>Sprit Airlines Redesigns</h2>
-                <p>#Mobile App #UX Research #Prototyping</p>
+          <div class="item1 item" data-aos="fade-up" data-aos-duration="1000">
+              <img src="https://static.wixstatic.com/media/c0bbc5_38b7b214f156472796e61ddd6fa87931~mv2_d_4318_2951_s_4_2.png/v1/fit/w_921,h_630,q_90/c0bbc5_38b7b214f156472796e61ddd6fa87931~mv2_d_4318_2951_s_4_2.png" alt="">
+              <div class="hover-mask">
+                  <div class="hover-text">
+                      <h2>Koriny Real Estate</h2>
+                      <p>#UX Resarch #UI design #Visual design</p>
+                  </div>
               </div>
+          </div>
+          <div class="flex">
+            <div class="item2 item" data-aos="fade-up" data-aos-duration="1000">
+                <img src="https://static.wixstatic.com/media/c0bbc5_5757a3151a4c4b7daf7167b874a4c362~mv2.png/v1/fit/w_259,h_403,q_90/c0bbc5_5757a3151a4c4b7daf7167b874a4c362~mv2.png" alt="">
+                <div class="hover-mask">
+                    <div class="hover-text">
+                        <h2>Sprit Airlines Redesigns</h2>
+                        <p>#Mobile App #UX Research #Prototyping</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item3 item" data-aos="fade-up" data-aos-duration="1000">
+                <img src="https://static.wixstatic.com/media/c0bbc5_276a0b31f1ae47ee86b5786bc8e84499~mv2.gif/v1/fit/w_633,h_433,q_90/c0bbc5_276a0b31f1ae47ee86b5786bc8e84499~mv2.gif" alt="">
+                <div class="hover-mask">
+                    <div class="hover-text">
+                        <h2>Globalizing Gender</h2>
+                        <p>#UX Research #UI design #Visual design</p>
+                    </div>
+                </div>
             </div>
           </div>
-          <div class="item3 item">
-            <img
-              src="https://static.wixstatic.com/media/c0bbc5_276a0b31f1ae47ee86b5786bc8e84499~mv2.gif/v1/fit/w_633,h_433,q_90/c0bbc5_276a0b31f1ae47ee86b5786bc8e84499~mv2.gif"
-              alt=""
-            />
-            <div class="hover-mask">
-              <div class="hover-text">
-                <h2>Globalizing Gender</h2>
-                <p>#UX Research #UI design #Visual design</p>
+          <div class="item4 item" data-aos="fade-up" data-aos-duration="1000">
+              <img src="https://static.wixstatic.com/media/c0bbc5_4d1ecd75b13b429aa74ed96156a0b7f3~mv2.png/v1/fit/w_921,h_630,q_90/c0bbc5_4d1ecd75b13b429aa74ed96156a0b7f3~mv2.png" alt="">
+              <div class="hover-mask">
+                  <div class="hover-text">
+                      <h2>IKEA Assembler</h2>
+                      <p>#Wev #Development#UX Research</p>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-        <div class="item4 item">
-          <img
-            src="https://static.wixstatic.com/media/c0bbc5_4d1ecd75b13b429aa74ed96156a0b7f3~mv2.png/v1/fit/w_921,h_630,q_90/c0bbc5_4d1ecd75b13b429aa74ed96156a0b7f3~mv2.png"
-            alt=""
-          />
-          <div class="hover-mask">
-            <div class="hover-text">
-              <h2>IKEA Assembler</h2>
-              <p>#Wev #Development#UX Research</p>
-            </div>
+      </div>
+  </section>
+
+
+
+  <section class="gallary2" id="fun">
+      
+      <div class="funItem1 fItem">
+          <div class="funItem1Image fItemImage">
+              <img src="https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_786,h_443,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 1x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 2x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 3x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 4x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 5x" >
+              <div class="hover-mask">
+                  <div class="hover-text">
+                      <h2>Koriny Real Estate</h2>
+                      <p>#UX Resarch #UI design #Visual design</p>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+      
+      <div class="flex">
+          <div class="funItem2 fItem">
+              <div class="funItem2Image fItemImage">
+                  <img src="https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_786,h_626,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 1x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 2x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 3x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 4x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 5x" >
+                  <div class="hover-mask">
+                      <div class="hover-text">
+                          <h2>Koriny Real Estate</h2>
+                          <p>#UX Resarch #UI design #Visual design</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      
+          <div class="funItem3 fItem">
+              <div class="funItem3Image fItemImage">
+                  <img src="https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_786,h_451,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 1x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_1572,h_902,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 2x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_2251,h_1291,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 3x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_2251,h_1291,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 4x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_2251,h_1291,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 5x" >
+                  <div class="hover-mask">
+                      <div class="hover-text">
+                          <h2>Koriny Real Estate</h2>
+                          <p>#UX Resarch #UI design #Visual design</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="flex">
+          <div class="funItem4 fItem">
+              <div class="funItem4Image fItemImage">
+                  <img src="https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_171,h_262,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 1x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_342,h_524,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 2x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_513,h_786,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 3x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_684,h_1048,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 4x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_855,h_1310,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 5x" >
+                  <div class="hover-mask">
+                      <div class="hover-text">
+                          <h2>Koriny Real Estate</h2>
+                          <p>#UX Resarch #UI design #Visual design</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+      
+          <div class="funItem5 fItem">
+              <div class="funItem5Image fItemImage">
+                  <img src="https://static.wixstatic.com/media/c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/    fit/w_605,h_262,q_90/c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 1x, https://static.   wixstatic.com/media/c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1210,h_524,q_90/  c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 2x, https://static.wixstatic.com/media/  c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1386,h_600,q_90/ c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 3x, https://static.wixstatic.com/media/ c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1386,h_600,q_90/    c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 4x, https://static.wixstatic.com/media/    c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1386,h_600,q_90/   c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 5x" >
+                  <div class="hover-mask">
+                      <div class="hover-text">
+                          <h2>Koriny Real Estate</h2>
+                          <p>#UX Resarch #UI design #Visual design</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 
-    <section class="gallary2" id="fun">
-      <div class="funItem1" id="">
-        <div class="funItem1Image">
-          <a href="">
-            <img
-              src="https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_786,h_443,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 1x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 2x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 3x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 4x, https://static.wixstatic.com/media/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.png/v1/fit/w_1368,h_771,q_90/c0bbc5_e5cd622ceff64104ac129321452ea409~mv2.webp 5x"
-            />
-          </a>
-        </div>
-        <div class="mask">
-          <!-- <p class="cameraText">Wix Design Playgraound 2019</p> -->
-        </div>
-      </div>
-
-      <div class="funItem2" id="">
-        <div class="funItem2Image">
-          <a href="">
-            <img
-              class="chivcago2"
-              src="https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_786,h_626,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 1x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 2x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 3x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 4x, https://static.wixstatic.com/media/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.png/v1/fit/w_1507,h_1200,q_90/c0bbc5_01c1c36beaa141a49c875766b4cdc53c~mv2_d_1508_1200_s_2.webp 5x"
-            />
-          </a>
-        </div>
-      </div>
-
-      <div class="funItem3" id="">
-        <div class="funItem3Image" id="">
-          <a class="a_image" href="">
-            <img
-              src="https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_786,h_451,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 1x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_1572,h_902,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 2x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_2251,h_1291,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 3x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_2251,h_1291,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 4x, https://static.wixstatic.com/media/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.jpg/v1/fit/w_2251,h_1291,q_90/c0bbc5_06f5029b0e7f42bda3dc7f5ecbdf12ec~mv2_d_2250_1293_s_2.webp 5x"
-            />
-          </a>
-        </div>
-      </div>
-
-      <div class="funItem4">
-        <div class="funItem4Image" id="">
-          <a class="a_image" href="">
-            <img
-              src="https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_171,h_262,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 1x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_342,h_524,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 2x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_513,h_786,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 3x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_684,h_1048,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 4x, https://static.wixstatic.com/media/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.png/v1/fit/w_855,h_1310,q_90/c0bbc5_463a85ec8d744678b89fdbe262405cdf~mv2_d_2709_4159_s_4_2.webp 5x"
-            />
-          </a>
-        </div>
-      </div>
-
-      <div class="funItem5">
-        <div class="funItem5Image" id="">
-          <a class="a_image" href="">
-            <img
-              src="https://static.wixstatic.com/media/c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/    fit/w_605,h_262,q_90/c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 1x, https://static.   wixstatic.com/media/c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1210,h_524,q_90/  c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 2x, https://static.wixstatic.com/media/  c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1386,h_600,q_90/ c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 3x, https://static.wixstatic.com/media/ c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1386,h_600,q_90/    c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 4x, https://static.wixstatic.com/media/    c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.png/v1/fit/w_1386,h_600,q_90/   c0bbc5_f9b95bde1aef4372b93880d44d06a035~mv2.webp 5x"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
+  </section>
     <!-- E:work  -->
 
     <!-- cloud -->
@@ -335,24 +339,26 @@
         let scVal = window.scrollY;
         if (scVal === 0) {
           // 맨 위에 오면
-          document.getElementById("updownbtn").style.transform =
-            "rotate(180deg)";
+          // document.getElementById("updownbtn").style.transform =
+          //   "rotate(180deg)";
           window.scrollTo({
             top: document.body.scrollHeight, // <- 페이지 총 Height
             behavior: "smooth",
           });
-          scVal = 0;
-          console.log(scVal);
-          document.getElementsByTagName("path")[0].style.fill = "white";
+          // scVal = 0;
+          // console.log(scVal);
+          // document.getElementsByTagName("path")[0].style.fill =
+          //   "rgb(240, 255, 0)";
         } else {
           // 맨 밑에 오면
-          document.getElementById("updownbtn").style.transform =
-            "rotate(180deg)";
+          // document.getElementById("updownbtn").style.transform =
+          //   "rotate(180deg)";
           window.scrollTo({ top: 0, behavior: "smooth" });
-          scVal = document.body.scrollHeight;
-          console.log(scVal);
-          document.getElementsByTagName("path")[0].style.fill =
-            "rgb(240, 255, 0)";
+          // scVal = document.body.scrollHeight;
+          // console.log(scVal);
+          
+          // document.getElementsByTagName("path")[0].style.fill = "white";
+          
 
         }
       }
@@ -364,21 +370,23 @@
         if (lastKnownScrollPosition === 0) {
           window.requestAnimationFrame(() => {
             document.getElementById("updownbtn").style.transform =
-              "rotate(180deg)";
-            document.getElementsByTagName("path")[0].style.fill =
-              "rgb(240, 255, 0)";
+              "rotate(0deg)";
+            // document.getElementsByTagName("path")[0].style.fill =
+            //   "rgb(240, 255, 0)";
           });
         } else if(lastKnownScrollPosition > 2200 && lastKnownScrollPosition < document.body.scrollHeight){
-          console.log(1)
+          
           let cloudItem = document.querySelectorAll('.cloud-item')
           for(let item of cloudItem){
             item.classList.add('active')
           }
+          
+          document.getElementsByTagName("path")[0].style.fill = "white";
         }
         else {
           window.requestAnimationFrame(() => {
             document.getElementById("updownbtn").style.transform =
-              "rotate(0deg)";
+              "rotate(180deg)";
             document.getElementsByTagName("path")[0].style.fill = "white";
           });
         }
