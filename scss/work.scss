@@ -214,7 +214,7 @@ $transitionSpeed :1.1s;
     .fItemImage:hover img{
         @include img_hover;
     }
-
+  }
   .flex{
     margin: 20px 0;
     display: flex;
@@ -240,7 +240,7 @@ $transitionSpeed :1.1s;
 }
 
  
-  }
+  
 
   .fItemImage:hover .hover-mask{
     opacity: 1; 
