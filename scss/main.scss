@@ -1,18 +1,23 @@
 @import "./about";
-@import './variables';
+@import "./variables";
+@import "./footer";
+@import "./header";
+@import "./work";
 
-#container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+#updownbtn {
+  z-index: 200;
+  position: fixed;
+  left: 1300px;
+  bottom: 100px;
+  box-shadow: #1a1111;
+}
+
+#svg1 {
+  filter: drop-shadow(0 0 10px #e1e1e1);
+}
+
+.video-wrapper {
+  height: 65vh;
 }
 
 video {
@@ -46,10 +51,6 @@ video {
   }
 }
 
-.work {
-  display: none;
-}
-
 #intro-description {
   margin-left: 25%;
 }
@@ -57,6 +58,14 @@ video {
 #intro-transition {
   margin-top: 220px;
   text-align: center;
+  visibility: hidden;
+  animation: cssAnimation 0s 1s forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+    visibility: visible;
+  }
 }
 
 .btn-transition {

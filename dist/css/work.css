@@ -32,12 +32,6 @@
   text-align: center;
 }
 
-.first,
-.second {
-  font-size: 14px;
-  font-weight: bold;
-}
-
 #btn {
   left: 50px;
   top: 0;
@@ -47,6 +41,14 @@
   background: #f0ff00;
   border-radius: 30px;
   transition: 0.5s;
+}
+
+#ui, #fun {
+  display: none;
+}
+
+#ui.active, #fun.active {
+  display: block;
 }
 
 .gallary {
@@ -132,7 +134,7 @@
   border-radius: 6px;
 }
 .hover-mask .hover-text {
-  width: 70%;
+  width: 100%;
   text-align: center;
 }
 .hover-mask .hover-text h2 {
@@ -154,36 +156,51 @@
   transform: scale(0.92);
 }
 
-.funItem1 {
-  width: auto;
-  height: 423px;
+.gallary2 {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.gallary2 .fItem {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
-  margin: 0 auto;
 }
-.funItem1Image {
-  width: auto;
-  height: 423px;
-  margin: 0 auto;
-  overflow: hidden;
+.gallary2 .fItem img {
+  width: 100%;
+  height: 100%;
   transition: 1.1s;
+  border-radius: 6px;
+  vertical-align: bottom;
 }
-.funItem1Image img {
-  width: auto;
-  height: 423px;
-}
-.funItem1Image:hover {
+.gallary2 .fItem .fItemImage:hover img {
   filter: brightness(0.5);
   transform: scale(1.08);
   transition: 1.1s;
 }
-.funItem1Text {
-  font-size: 130%;
-  text-align: center;
-  padding-top: 80px;
-  color: #1a1111;
+.gallary2 .fItem .flex {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallary2 .fItem .flex .funItem2 {
+  width: 40%;
+}
+.gallary2 .fItem .flex .funItem3 {
+  width: 55%;
+}
+.gallary2 .fItem .flex .funItem4 {
+  width: 21%;
+}
+.gallary2 .fItem .flex .funItem5 {
+  width: 75%;
 }
 
+.fItemImage:hover .hover-mask {
+  opacity: 1;
+}/*# sourceMappingURL=work.css.map */
 .funItem2 {
   width: auto;
   height: 423px;
@@ -313,4 +330,4 @@
 #btnA.active,
 #btnB.active {
   color: #f0ff00;
-}/*# sourceMappingURL=work.css.map */
+}
