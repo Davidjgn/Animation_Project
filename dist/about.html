@@ -322,21 +322,23 @@
         if (lastKnownScrollPosition === 0) {
           window.requestAnimationFrame(() => {
             document.getElementById("updownbtn").style.transform =
-              "rotate(180deg)";
-            document.getElementsByTagName("path")[0].style.fill =
-              "rgb(240, 255, 0)";
+              "rotate(0deg)";
+            // document.getElementsByTagName("path")[0].style.fill =
+            //   "rgb(240, 255, 0)";
           });
         } else if(lastKnownScrollPosition > 2200 && lastKnownScrollPosition < document.body.scrollHeight){
-          console.log(1)
+          
           let cloudItem = document.querySelectorAll('.cloud-item')
           for(let item of cloudItem){
             item.classList.add('active')
           }
+          
+          document.getElementsByTagName("path")[0].style.fill = "white";
         }
         else {
           window.requestAnimationFrame(() => {
             document.getElementById("updownbtn").style.transform =
-              "rotate(0deg)";
+              "rotate(180deg)";
             document.getElementsByTagName("path")[0].style.fill = "white";
           });
         }
