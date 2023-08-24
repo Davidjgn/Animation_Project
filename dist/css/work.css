@@ -32,7 +32,8 @@
   text-align: center;
 }
 
-.first, .second {
+.first,
+.second {
   font-size: 14px;
   font-weight: bold;
 }
@@ -299,14 +300,17 @@
   color: #1a1111;
 }
 
-#ui, #fun {
+#ui,
+#fun {
   display: none;
 }
 
-#ui.active, #fun.active {
+#ui.active,
+#fun.active {
   display: block;
 }
 
-#btnA.active, #btnB.active {
+#btnA.active,
+#btnB.active {
   color: #f0ff00;
 }/*# sourceMappingURL=work.css.map */
